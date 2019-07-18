@@ -9,7 +9,8 @@ var config = {
     databaseURL: "https://save-sut-marioplan.firebaseio.com",
     projectId: "save-sut-marioplan",
     storageBucket: "",
-    messagingSenderId: "408022317028"
+    messagingSenderId: "408022317028",
+    appId: "1:408022317028:web:4af1b03076f643b0"
 }
 
 firebase.initializeApp(config)
