@@ -38,9 +38,6 @@ class SignIn extends Component {
                         <div className="red-text center">
                             { authError ? <p>{authError}</p> : null }
                         </div>
-                        <div className="green-text center">
-                            { !authError ? <p>Login Success</p> : null }
-                        </div>
                     </div>
                 </form>
             </div>  
