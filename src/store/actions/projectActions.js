@@ -5,9 +5,9 @@ export const createProject = project => {
             .collection('projects')
             .add({
                 ...project,
-                authorFirstName: 'Anuwat',
-                authorLastName: 'Songchumrong',
-                authorId: '21637',
+                authorFirstName: getState().firebase.profile.firstName,
+                authorLastName: getState().firebase.profile.lastName,
+                authorId: getState().firebase.auth.uid,
                 createdAt: new Date()
             })
             .then(() => {
